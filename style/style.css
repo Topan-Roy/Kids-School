@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+}
+/* shared style */
+.body{
+        max-width: 1440px;
+        margin: 0 auto;
+}
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    background-color:rgb(254, 163, 1) ;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    font-size: 1.25rem;
+    font-weight: 600px;
+    border-radius: 15px;
+    border: none;
+     width: 197px;
+/* height: 50px;  */
+text-align: center;
+}
+.btn-pri{
+    background-color: black;
+}
+
+/* navbar releted style */
+.nav-h2{
+    font-weight: 700px;
+    font-size: 2.5rem;
+     margin-left: 20px; 
+}
+.navber-img{
+    margin-top: 30px;
+}
+.navber{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ber{
+  display: flex;
+} 
+.nav-title{
+    list-style: none;
+    margin-right: 40px;
+    font-size: 1.4rem;
+}
+.nav-links{
+  text-decoration: none;
+  color: aqua;
+}
+.nav-title-color-1 >a{
+    color: rgb(254, 163, 1);
+}
+.nav-title-color-2 >a{
+    color: rgb(1, 172, 253);
+}
+.nav-title-color-3 >a{
+    color:rgb(5, 212, 223);
+}
+.nav-title-color-4 >a{
+    color: rgb(93, 88, 239);
+}
+/* banner style */
+
+.banner{
+    gap: 300px;
+}
+.banner-contant{
+ width: 600px;
+margin-top: 50px;
+}
+.banner-title{
+    color: rgb(58, 58, 58);
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 10px;
+}
+.banner-title-pra{
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* .sponspors-companies{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 100px;
+} */
+.banner-title-em{
+    color: rgb(254, 163, 1);
+}
+.banner-title-tow{
+    color:rgb(5, 212, 223);
+}
+/* Standard Curriculum */
+.skill-container{
+    background-image: url(../assets/bg.png);
+    margin-top: 100px;
+}
+.skill-contain{
+    justify-content: space-evenly;
+    /* gap: 30px; */
+}
+.skill-heder{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.skill{
+     padding: 70px; 
+    border-radius: 10px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+.skill-title{
+     color: rgb(32, 32, 32);;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.skill-description{
+    color: rgb(128, 128, 128);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.skill-btn-1{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    color: rgb(100, 200, 255);
+}
+.skill-btn-2{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    color:rgb(240, 170, 0);
+}
+.skill-btn-3{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    color:rgb(135, 0, 255);
+}
+.skill-1{
+    background-color: 
+    rgb(222, 245, 255);
+}
+.skill-2{
+    background-color: rgb(255, 244, 220);
+}
+.skill-3{
+    background-color: rgb(238, 225, 255);
+}
+ 
+
+
+
+
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .navber, .nav-ber, .skill-contain {
+        flex-direction:column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+    .banner-image >img{
+    width: 350px;
+    }
+    .banner-contant{
+        width: 300px;
+       margin-top: 20px;
+       }
+       .skill-contain{
+        gap: 30px;
+       }
+       .skill-description{
+        width: 260px;
+       }
+}
