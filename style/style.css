@@ -31,6 +31,7 @@
 }
 
 /* navbar releted style */
+
 .nav-h2{
     font-weight: 700px;
     font-size: 2.5rem;
@@ -72,8 +73,12 @@
    color:rgb(1, 172, 253) ;
    font-size: 1.5rem;
 }
-.menu-icon{
+.iconn{
     display:none;
+}
+.closs{
+    border-bottom: 2px solid #FF900E;
+    display: none;
 }
 /* banner style */
 .banner{
@@ -277,11 +282,29 @@ border-radius: 10px;
  }
 
 /* responsive media query */
-@media screen and (max-width:576px) {
-    .navber,.nav-ber, .skill-contain, .footer-contaner {
+ @media screen and (max-width:576px) {
+      .skill-contain, .footer-contaner {
         flex-direction:column;
+    } 
+    .navber >ul{
+        display: none;
     }
-    .banner{
+    .btn-primary{
+        display: none;
+    }
+    .nav-h2{
+        display: none;
+    }
+    .iconn{
+        display: block;
+        margin-right: 20px;
+    }
+    .closs{
+        display: block;
+    }
+
+    
+     .banner{
         flex-direction: column-reverse;
         gap: 30px;
         text-align: center;
@@ -326,5 +349,5 @@ border-radius: 10px;
          height: 600px;
         grid-template-columns: repeat(1, 1fr);
         
-    }
+    } 
 }
